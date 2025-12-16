@@ -3,6 +3,10 @@
 
 int main()
 {
+	Student* Student_header = NULL;
+	Student* Score_header = NULL;
+	
 	mainMenu();
 	return 0;
 }
+
