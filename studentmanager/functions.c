@@ -20,13 +20,11 @@ void classAnalysis();         //�༶����
 void senmesterSum();          //ѧ�ڡ�ѧ�����
  
 void userSetting()          //用户设置 
-{
-
-}
 void subjectSetting();        //ѧ������ 
 void grade_classSetting();    //�꼶���༶���� 
 void grade_standardSetting(); //�ɼ���׼���� 
 
 void systemNotice();          //ϵͳ֪ͨ 
 void groupedNotice();         //����֪ͨ 
+
 
