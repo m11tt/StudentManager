@@ -25,11 +25,11 @@ typedef struct Score
 
 void vainMenu();              //主菜单 
 
-void menuA();                 //菜单A.
-void menuB();                 //B.ѧ���ɼ����� 
-void menuC();                 //C.ͳ�Ʒ��� 
-void menuD();                 //D.ϵͳ���� 
-void menuE();                 //E.֪ͨ���� 
+void menuA();                 //菜单A.学生信息管理
+void menuB();                 //菜单B.学生成绩管理
+void menuC();                 //菜单C.成绩统计分析
+void menuD();                 //菜单D.系统设置
+void menuE();                 //菜单E.֪ͨ通知公告
 
 void addInfo();               //¼��ѧ��������Ϣ 
 void delectStudent();         //ɾ��ѧ����Ϣ 
@@ -56,4 +56,5 @@ void grade_standardSetting(); //�ɼ���׼����
 void systemNotice();          //ϵͳ֪ͨ 
 void groupedNotice();         //����֪ͨ 
 #endif
+
 
