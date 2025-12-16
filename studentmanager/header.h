@@ -2,10 +2,30 @@
 #define HEADERS_H
 
 #include<stdio.h>
+#include<stdlib.h>
 
-void mainMenu();              //���˵� 
+typedef struct Student
+{
+    char name[10];            //年龄
+    char id[8];               //学号
+    char major[20];           //专业
+    char gender[6];           //性别
+    int age;                  //年龄
+    char phone[11];           //电话
+    Student* next;            //指向下一个学生的指针
+}Student;
 
-void menuA();                 //A.ѧ����Ϣ���� 
+typedef struct Score
+{
+    char studentId[8];               //学号
+    char courseName[30];             //课程名称
+    float score;                     //成绩
+    Score* next;                     //指向下一个学生的指针
+}Score;
+
+void vainMenu();              //主菜单 
+
+void menuA();                 //菜单A.
 void menuB();                 //B.ѧ���ɼ����� 
 void menuC();                 //C.ͳ�Ʒ��� 
 void menuD();                 //D.ϵͳ���� 
@@ -36,3 +56,4 @@ void grade_standardSetting(); //�ɼ���׼����
 void systemNotice();          //ϵͳ֪ͨ 
 void groupedNotice();         //����֪ͨ 
 #endif
+
