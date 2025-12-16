@@ -15,10 +15,16 @@ typedef struct Student
     Student* next;            //指向下一个学生的指针
 }Student;
 
+typedef struct Subject
+{
+    char subject[30];         //学科名
+    Subject* subject_next;    //指向下一个学科的指针
+}Subject;
+
 typedef struct Score
 {
     char studentId[8];               //学号
-    char courseName[30];             //课程名称
+    Subject subject;                 //课程名称
     float score;                     //成绩
     Score* next;                     //指向下一个学生的指针
 }Score;
@@ -56,5 +62,6 @@ void grade_standardSetting(); //�ɼ���׼����
 void systemNotice();          //ϵͳ֪ͨ 
 void groupedNotice();         //����֪ͨ 
 #endif
+
 
 
