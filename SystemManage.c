@@ -6,11 +6,11 @@
 #include"Functions.h" 
 
 
-//1.Ñ§¿ÆÉèÖÃ 
+//1.å­¦ç§‘è®¾ç½® 
 Subject* subHead = NULL;
 Subject* subTail = NULL;
  
-//´´½¨SubjectÐÂ½Úµã
+//åˆ›å»ºSubjectæ–°èŠ‚ç‚¹
 Subject* CreateNewSub(const char* id, const char* name) 
 {
 	Subject* node = malloc(sizeof(Subject));
@@ -18,7 +18,7 @@ Subject* CreateNewSub(const char* id, const char* name)
 	if(node == NULL)
 	return node;
 	
-	//´¢´æÊý¾Ý 
+	//å‚¨å­˜æ•°æ® 
 	strcpy(node->Id, id);
 	strcpy(node->Name , name);
 	
@@ -27,14 +27,14 @@ Subject* CreateNewSub(const char* id, const char* name)
 	return node;
 }
 
-//µ¼ÈëÑ§¿ÆÊý¾Ý
+//å¯¼å…¥å­¦ç§‘æ•°æ®
 void ImportSub(void)
 {
-	//µ¼ÈëÊý¾Ý 
+	//å¯¼å…¥æ•°æ® 
 	FILE* file = fopen("SubjectInfo.txt","r");
 	if (file == NULL) 
 	{	
-		printf("ÎÄ¼þµ¼ÈëÊ§°Ü£¡£¡£¡\n");
+		printf("æ–‡ä»¶å¯¼å…¥å¤±è´¥ï¼ï¼ï¼\n");
 		return;
 	}
 	
@@ -44,7 +44,7 @@ void ImportSub(void)
 	{
 		Subject* node = CreateNewSub(id, name);
 	 
-		//²åÈëÎ²²¿
+		//æ’å…¥å°¾éƒ¨
 		if(subHead == NULL)
 		{
 			subHead = subTail =node;
@@ -59,13 +59,13 @@ void ImportSub(void)
 	return;
 } 
 
-//±£´æÑ§¿ÆÐÂÊý¾Ý 
+//ä¿å­˜å­¦ç§‘æ–°æ•°æ® 
 void SaveSub()
 {
 	FILE* file = fopen("SubjectInfo.txt", "w");
 	if(file = NULL)
 	{
-		printf("ÎÞ·¨±£´æÊý¾Ý£¬ÇëÖØÊÔ£¡\n");
+		printf("æ— æ³•ä¿å­˜æ•°æ®ï¼Œè¯·é‡è¯•ï¼\n");
 	}
 	
 	Subject* current = subHead;
@@ -75,32 +75,32 @@ void SaveSub()
 		current = current->next;
 	}
 	fclose(file);
-	printf("Êý¾ÝÖØÐÂ³É¹¦(¡î¨Œ¡î)\n");
+	printf("æ•°æ®é‡æ–°æˆåŠŸ(â˜†â–½â˜†)\n");
 	return;
  } 
 
-//Ñ§¿ÆÉèÖÃ²Ëµ¥ 
+//å­¦ç§‘è®¾ç½®èœå• 
 int SubjectSetting()
 {
 	int choice;
-	//Ñ¡Ôñ¹¦ÄÜ
+	//é€‰æ‹©åŠŸèƒ½
 	do
 	{
-		printf("            ¡ý¡ý¡ý<1.Ñ§¿ÆÉèÖÃ>©d(¨R ¨Œ ¨Q)©f\n");
+		printf("            â†“â†“â†“<1.å­¦ç§‘è®¾ç½®>ãƒ¾(â‰§ â–½ â‰¦)ã‚\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.Ñ§¿ÆÄ¿Â¼                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.Ôö¼ÓÑ§¿Æ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 3.É¾³ýÑ§¿Æ             ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 4.ÐÞ¸ÄÑ§¿Æ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 0.·µ»ØÖ÷²Ëµ¥                   ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.å­¦ç§‘ç›®å½•                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.å¢žåŠ å­¦ç§‘                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 3.åˆ é™¤å­¦ç§‘             â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 4.ä¿®æ”¹å­¦ç§‘                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 0.è¿”å›žä¸»èœå•                   â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 		
 		scanf(" %d",&choice);
@@ -122,13 +122,13 @@ int SubjectSetting()
 			case 0:
 				return; 
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 		}
 	    }while(1);	
 	return 0;
 }    
  
-//1.1Ñ§¿ÆÄ¿Â¼
+//1.1å­¦ç§‘ç›®å½•
 void ShowSub()
 { 
 	if(subHead = NULL){
@@ -143,24 +143,24 @@ void ShowSub()
 	}
 }
 
-//1.2Ôö¼ÓÑ§¿Æ
+//1.2å¢žåŠ å­¦ç§‘
 void AddSub()
 {
 	if(subHead = NULL){
 	return ;
 	}
 	
-	//ÊäÈëÐÅÏ¢ 
+	//è¾“å…¥ä¿¡æ¯ 
 	char id[5], name[30];
-	printf("ÇëÊäÈëÐÂÔöÑ§¿Æid\n");
+	printf("è¯·è¾“å…¥æ–°å¢žå­¦ç§‘id\n");
 	scanf("%s", id);
-	printf("ÇëÊäÈëÐÂÔöÑ§¿ÆÃû³Æ\n");
+	printf("è¯·è¾“å…¥æ–°å¢žå­¦ç§‘åç§°\n");
 	scanf("%s", name);
 	
-	//´´½¨ÐÂ½Úµã 
+	//åˆ›å»ºæ–°èŠ‚ç‚¹ 
 	Subject* newSub = CreateNewSub(id, name); 
 	
-	//²åÈëÁ´±íÎ²²¿
+	//æ’å…¥é“¾è¡¨å°¾éƒ¨
 	if(subHead == NULL)
 	{
 		subHead = subTail = newSub;
@@ -177,21 +177,21 @@ void AddSub()
 	return;
 } 
 
-//1.3É¾³ýÑ§¿Æ
+//1.3åˆ é™¤å­¦ç§‘
 void DeleteSub()
 {
 	if(subHead = NULL){
 		return ;
 	}
 	
-	//ÊäÈëÐÅÏ¢ 
+	//è¾“å…¥ä¿¡æ¯ 
 	char id[5], name[30];
-	printf("ÇëÊäÈëÒªÉ¾³ýµÄÑ§¿Æid:\n");
+	printf("è¯·è¾“å…¥è¦åˆ é™¤çš„å­¦ç§‘id:\n");
 	scanf("%s", name);
-	printf("ÇëÊäÈëÒªÉ¾³ýµÄÑ§¿ÆÃû³Æ£º\n");
+	printf("è¯·è¾“å…¥è¦åˆ é™¤çš„å­¦ç§‘åç§°ï¼š\n");
 	scanf("%s", name);
 	
-	//ÔÚÁ´±í²éÕÒ ²¢É¾³ý 
+	//åœ¨é“¾è¡¨æŸ¥æ‰¾ å¹¶åˆ é™¤ 
 	Subject* current = subHead;
 	while(current != NULL && current->next != NULL)
 	{
@@ -208,19 +208,19 @@ void DeleteSub()
 	return; 
 } 
 
-//1.4 ÐÞ¸ÄÑ§¿Æ
+//1.4 ä¿®æ”¹å­¦ç§‘
 void ChangeSub()
 {
 	if(subHead = NULL){
 		return NULL;
 	}
 	
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                 1.Ñ§¿ÆÄ¿Â¼                     ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                 2.Ôö¼ÓÑ§¿Æ                     ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                 1.å­¦ç§‘ç›®å½•                     â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                 2.å¢žåŠ å­¦ç§‘                     â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 	printf("\n");
 	
 	int choice;
@@ -229,25 +229,25 @@ void ChangeSub()
 	char id[5], newId[5];
 	char name[30], newName[30];
 	
-	//ÊäÈëÐÅÏ¢ 
+	//è¾“å…¥ä¿¡æ¯ 
 	if(choice == 1)
 	{
 		char id[5], newId[5];
-		printf("ÇëÊäÈëÒªÐÞ¸ÄµÄid£º\n");
+		printf("è¯·è¾“å…¥è¦ä¿®æ”¹çš„idï¼š\n");
 		scanf("%s", id);
-		printf("ÇëÊäÈëÐÂµÄid£º\n");
+		printf("è¯·è¾“å…¥æ–°çš„idï¼š\n");
 		scanf("%s",newId);
 	}
 	else if(choice == 2)
 	{
 		char name[30], newName[30];
-		printf("ÇëÊäÈëÒªÐÞ¸ÄµÄÑ§¿ÆÃû³Æ£º\n");
+		printf("è¯·è¾“å…¥è¦ä¿®æ”¹çš„å­¦ç§‘åç§°ï¼š\n");
 		scanf("%s", name);
-		printf("ÇëÊäÈëÐÂµÄÑ§¿ÆÃû³Æ£º\n");
+		printf("è¯·è¾“å…¥æ–°çš„å­¦ç§‘åç§°ï¼š\n");
 		scanf("%s",newName);
 	}
 	
-	//ÔÚÁ´±í²éÕÒ²¢ÐÞ¸Ä 
+	//åœ¨é“¾è¡¨æŸ¥æ‰¾å¹¶ä¿®æ”¹ 
 	Subject* current = subHead; 
 	while(current != NULL)
 	{
@@ -271,35 +271,35 @@ void ChangeSub()
 } 
  
   
-//2.Äê¼¶Ä¿Â¼ 
+//2.å¹´çº§ç›®å½• 
 void ShowGrade()
 {
-	printf("            ¡ý¡ý¡ý<2.Äê¼¶Ä¿Â¼>©d(¨R ¨Œ ¨Q)©f\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                    ´óÒ»(2025¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                    ´ó¶þ(2024¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                    ´óÈý(2023¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                    ´óËÄ(2022¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");	
-	printf("¡ó                    ´ó¶þ(2021¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                    ´óÈý(2023¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                    ´óËÄ(2022¼¶)                      ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");	
+	printf("            â†“â†“â†“<2.å¹´çº§ç›®å½•>ãƒ¾(â‰§ â–½ â‰¦)ã‚\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                    å¤§ä¸€(2025çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                    å¤§äºŒ(2024çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                    å¤§ä¸‰(2023çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                    å¤§å››(2022çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");	
+	printf("â—‡                    ç ”ä¸€(2021çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                    ç ”äºŒ(2023çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                    å¤§ä¸‰(2022çº§)                      â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");	
 	return; 
 } 
 
 
-//3.°à¼¶ÉèÖÃ
+//3.ç­çº§è®¾ç½®
  
 Class* classHead = NULL;
 Class* classTail = NULL;
  
-//´´½¨ClassÐÂ½Úµã
+//åˆ›å»ºClassæ–°èŠ‚ç‚¹
 Class* CreateNewClass(const char* id, const char* name) 
 {
 	Class* node = malloc(sizeof(Class));
@@ -307,21 +307,21 @@ Class* CreateNewClass(const char* id, const char* name)
 	if(node == NULL)
 	return node;
 	
-	//´¢´æÊý¾Ý 
+	//å‚¨å­˜æ•°æ® 
 	strcpy(node->Id,id);
 	strcpy(node->Name, name);
 	
 	return node;
 }
 
-//µ¼Èë°à¼¶Êý¾Ý
+//å¯¼å…¥ç­çº§æ•°æ®
 void ImportClass(void)
 {
-	//µ¼ÈëÊý¾Ý 
+	//å¯¼å…¥æ•°æ® 
 	FILE* file = fopen("ClassInfo.txt","r");
 	if (file == NULL) 
 	{	
-		printf("ÎÄ¼þµ¼ÈëÊ§°Ü£¡£¡£¡\n");
+		printf("æ–‡ä»¶å¯¼å…¥å¤±è´¥ï¼ï¼ï¼\n");
 		return;
 	}
 	
@@ -331,7 +331,7 @@ void ImportClass(void)
 	{
 		Class* node = CreateNewClass(id, name);
 	 
-		//²åÈëÎ²²¿
+		//æ’å…¥å°¾éƒ¨
 		if(classHead == NULL)
 		{
 			subHead = subTail = node;
@@ -346,13 +346,13 @@ void ImportClass(void)
 	return ;
 } 
 
-//±£´æ°à¼¶ÐÂÊý¾Ý 
+//ä¿å­˜ç­çº§æ–°æ•°æ® 
 void SaveClass()
 {
 	FILE* file = fopen("ClassInfo.txt", "w");
 	if(file = NULL)
 	{
-		printf("ÎÞ·¨±£´æÊý¾Ý£¬ÇëÖØÊÔ£¡\n");
+		printf("æ— æ³•ä¿å­˜æ•°æ®ï¼Œè¯·é‡è¯•ï¼\n");
 	}
 	
 	Class* current = classHead;
@@ -362,7 +362,7 @@ void SaveClass()
 		current = current->next;
 	}
 	fclose(file);
-	printf("Êý¾ÝÖØÐÂ³É¹¦(¡î¨Œ¡î)\n");
+	printf("æ•°æ®é‡æ–°æˆåŠŸ(â˜†â–½â˜†)\n");
 	
 	return NULL;
  } 
@@ -370,24 +370,24 @@ void SaveClass()
 int ClassSetting()
 {
 	int choice;
-	//Ñ¡Ôñ¹¦ÄÜ
+	//é€‰æ‹©åŠŸèƒ½
 	do
 	{
-		printf("            ¡ý¡ý¡ý<3.°à¼¶ÉèÖÃ>©d(¨R ¨Œ ¨Q)©f\n");
+		printf("            â†“â†“â†“<3.ç­çº§è®¾ç½®>ãƒ¾(â‰§ â–½ â‰¦)ã‚\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.°à¼¶Ä¿Â¼                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.Ôö¼Ó°à¼¶                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 3.É¾³ý°à¼¶             ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 4.ÐÞ¸Ä°à¼¶                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 0.·µ»ØÖ÷²Ëµ¥                   ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.ç­çº§ç›®å½•                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.å¢žåŠ ç­çº§                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 3.åˆ é™¤ç­çº§             â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 4.ä¿®æ”¹ç­çº§                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 0.è¿”å›žä¸»èœå•                   â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 		
 		scanf(" %d",&choice);
@@ -409,13 +409,13 @@ int ClassSetting()
 			case 0:
 				return; 
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 		}
 	    }while(1);	
 	return 0;
 }   
 
-//3.1°à¼¶Ä¿Â¼
+//3.1ç­çº§ç›®å½•
 void ShowClass()
 {
 	FILE* file = fopen("ClassInfo.txt", "r");
@@ -434,24 +434,24 @@ void ShowClass()
 	return NULL;
 } 
   
-//3.2Ôö¼Ó°à¼¶
+//3.2å¢žåŠ ç­çº§
 void AddClass()
 {
 	if(classHead = NULL){
 	return NULL;
 	}
 	
-	//ÊäÈëÐÅÏ¢ 
+	//è¾“å…¥ä¿¡æ¯ 
 	char id[9], name[30];
-	printf("ÇëÊäÈëÐÂÔöÑ§¿Æid£º\n");
+	printf("è¯·è¾“å…¥æ–°å¢žå­¦ç§‘idï¼š\n");
 	scanf("%s", id);
-	printf("ÇëÊäÈëÐÂÔöÑ§¿ÆÃû³Æ£º\n");
+	printf("è¯·è¾“å…¥æ–°å¢žå­¦ç§‘åç§°ï¼š\n");
 	scanf("%s", name);
 	
-	//´´½¨ÐÂ½Úµã 
+	//åˆ›å»ºæ–°èŠ‚ç‚¹ 
 	Class* newClass = CreateNewClass(id, name); 
 	
-	//²åÈëÁ´±íÎ²²¿
+	//æ’å…¥é“¾è¡¨å°¾éƒ¨
 	if(classHead == NULL)
 	{
 		classHead = classTail = newClass;
@@ -467,21 +467,21 @@ void AddClass()
 	return NULL;	
 } 
 
-//3.3É¾³ý°à¼¶
+//3.3åˆ é™¤ç­çº§
 void DeleteClass()
 {
 	if(classHead = NULL){
 		return NULL;
 	}
 	
-	//ÊäÈëÐÅÏ¢ 
+	//è¾“å…¥ä¿¡æ¯ 
 	char id[9], name[30];
-	printf("ÇëÊäÈëÒªÉ¾³ýµÄ°à¼¶id:\n");
+	printf("è¯·è¾“å…¥è¦åˆ é™¤çš„ç­çº§id:\n");
 	scanf("%s", id);
-	printf("ÇëÊäÈëÒªÉ¾³ýµÄ°à¼¶Ãû³Æ:\n");
+	printf("è¯·è¾“å…¥è¦åˆ é™¤çš„ç­çº§åç§°:\n");
 	scanf("%s", name);
 	
-	//ÔÚÁ´±í²éÕÒ ²¢É¾³ý 
+	//åœ¨é“¾è¡¨æŸ¥æ‰¾ å¹¶åˆ é™¤ 
 	Class* current = classHead;
 	while(current != NULL && current->next != NULL)
 	{
@@ -498,7 +498,7 @@ void DeleteClass()
 	return; 
 } 
 
-//3.4ÐÞ¸Ä°à¼¶
+//3.4ä¿®æ”¹ç­çº§
 void ChangeClass()
 {
 	if(classHead = NULL){
@@ -512,39 +512,39 @@ void ChangeClass()
 	
 	do
 	{
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.°à¼¶id                       ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.°à¼¶Ãû³Æ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.ç­çº§id                       â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.ç­çº§åç§°                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 		
 		scanf("%d",&choice);
-		//ÊäÈëÐÅÏ¢ 
+		//è¾“å…¥ä¿¡æ¯ 
 		if(choice == 1)
 		{
-			printf("ÇëÊäÈëÒªÐÞ¸ÄµÄid£º\n");
+			printf("è¯·è¾“å…¥è¦ä¿®æ”¹çš„idï¼š\n");
 			scanf("%s", id);
-			printf("ÇëÊäÈëÐÂµÄid£º\n");
+			printf("è¯·è¾“å…¥æ–°çš„idï¼š\n");
 			scanf("%s",newId);
 		}
 		else if(choice == 2)
 		{
 			char name[30], newName[30];
-			printf("ÇëÊäÈëÒªÐÞ¸ÄµÄÑ§¿ÆÃû×Ö£º\n");
+			printf("è¯·è¾“å…¥è¦ä¿®æ”¹çš„å­¦ç§‘åå­—ï¼š\n");
 			scanf("%s", name);
-			printf("ÇëÊäÈëÐÂµÄÑ§¿ÆÃû×Ö£º\n");
+			printf("è¯·è¾“å…¥æ–°çš„å­¦ç§‘åå­—ï¼š\n");
 			scanf("%s",newName);
 		}
 		else
 		{
-			printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n");
+			printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n");
 		 } 
    	}while(1);
    
    
-	//ÔÚÁ´±í²éÕÒ²¢ÐÞ¸Ä 
+	//åœ¨é“¾è¡¨æŸ¥æ‰¾å¹¶ä¿®æ”¹ 
 	Class* current = classHead; 
 	while(current != NULL)
 	{
@@ -568,27 +568,28 @@ void ChangeClass()
 } 
 
 
-//4.³É¼¨±ê×¼ÉèÖÃ
+//4.æˆç»©æ ‡å‡†è®¾ç½®
 void StandardSetting()
 {
-	printf("            ¡ý¡ý¡ý <·ÖÊý±ê×¼> (¨R¨Œ¨Q*)o\n");
+	printf("            â†“â†“â†“ <åˆ†æ•°æ ‡å‡†> (â‰§â–½â‰¦*)o\n");
 	printf("\n"); 
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                  ÓÅ    [90,100]                    ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                  Á¼    [80,90)                     ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                  ÖÐ    [70,80)                     ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                 ¼°¸ñ   [60,70)                     ¡ó\n");
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-	printf("¡ó                ²»¼°¸ñ  [0,60)                      ¡ó\n");	
-	printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                  ä¼˜    [90,100]                    â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                  è‰¯    [80,90)                     â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                  ä¸­    [70,80)                     â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                 åŠæ ¼   [60,70)                     â—‡\n");
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+	printf("â—‡                ä¸åŠæ ¼  [0,60)                      â—‡\n");	
+	printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 	printf("\n");		
 	
 	return NULL;
 } 
   
+
 
 
 
