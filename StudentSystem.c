@@ -20,8 +20,9 @@ int main()
 			StudentMenu();
 			break;
 		default:
-			printf("´íÎóÀàĞÍ/(¨Òo¨Ò)/~~\n"); 
+			printf("é”™è¯¯ç±»å‹/(ã„’oã„’)/~~\n"); 
 	}
 	return 0;
 }
+
 
