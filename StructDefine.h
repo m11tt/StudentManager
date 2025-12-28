@@ -12,29 +12,29 @@ typedef struct User
 typedef struct Student
 {
 	char Id[9];
-    char Name[30];            //ĞÕÃû 
-    char Major[20];           //×¨Òµ
+    char Name[30];            //å§“å 
+    char Major[20];           //ä¸“ä¸š
     char Grade[10];
     char Class[15];
-    char Gender[10];           //ĞÔ±ğ
-    int Age;                  //ÄêÁä
-    char Phone[15];           //µç»°
-    struct Student* next;            //Ö¸ÏòÏÂÒ»¸öÑ§ÉúµÄÖ¸Õë
+    char Gender[10];           //æ€§åˆ«
+    int Age;                  //å¹´é¾„
+    char Phone[15];           //ç”µè¯
+    struct Student* next;            //æŒ‡å‘ä¸‹ä¸€ä¸ªå­¦ç”Ÿçš„æŒ‡é’ˆ
 }Student;
 
 typedef struct Subject
 {
-    char Name[30];         //Ñ§¿ÆÃû
+    char Name[30];         //å­¦ç§‘å
     char Id[30];
-    struct Subject* next;     //Ö¸ÏòÏÂÒ»¸öÑ§¿ÆµÄÖ¸Õë
+    struct Subject* next;     //æŒ‡å‘ä¸‹ä¸€ä¸ªå­¦ç§‘çš„æŒ‡é’ˆ
 }Subject;
 
 typedef struct Score
 {
-    char StudentId[9];               //Ñ§ºÅ
+    char StudentId[9];               //å­¦å·
     char SubjectId[30];
 	float Score; 
-    struct Score* next;                     //Ö¸ÏòÏÂÒ»¸öÑ§ÉúµÄÖ¸Õë
+    struct Score* next;                     //æŒ‡å‘ä¸‹ä¸€ä¸ªå­¦ç”Ÿçš„æŒ‡é’ˆ
 }Score;
 
 typedef struct Class
@@ -44,5 +44,11 @@ typedef struct Class
 	struct Class* next;
 }Class;
 
+typedef struct History {
+    char content[200];
+    struct History* next;
+} History;
+
 
 #endif 
+
