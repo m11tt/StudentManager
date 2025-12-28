@@ -2,6 +2,10 @@
 #define FUNCTIONS_H
 
 //A
+extern Student* studentHead;
+extern Score* scoreHead;
+extern History* historyHead;
+
 int addInfo(void);
                      
 int checkInfo(void);
@@ -33,7 +37,7 @@ int classAnalysis(void);
 int senmesterSum(void); 
      
 //D
-//学科设置 
+//瀛︾璁剧疆 
 int SubjectSetting(void); 
 Subject* CreateNewSub(const char* id, const char* name);
 void ImportSub(void);
@@ -43,10 +47,10 @@ void AddSub(void);
 void DeleteSub(void);
 void ChangeSub(void);
 
-//年级管理 
+//骞寸骇绠＄悊 
 void ShowGrade(void);
 
-//班级管理  
+//鐝骇绠＄悊  
 int ClassSetting();
 Class* CreateNewClass(const char* id, const char* name);
 void ImportClass(void);
@@ -57,7 +61,8 @@ void DeleteClass();
 void ChangeClass();
 
 
-//成绩标准 
+//鎴愮哗鏍囧噯 
 void StandardSetting(); 
 
 #endif
+
