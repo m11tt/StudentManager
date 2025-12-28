@@ -46,6 +46,11 @@ typedef struct Class
 	int students[100];
 }Class;
 
+typedef struct History {
+    char content[200];
+    struct History* next;
+} History;
+
 
 #endif 
 
