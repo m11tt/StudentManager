@@ -3,7 +3,7 @@
 
 int addInfo()
 {
-	printf("Hello!");
+	
 	return 0;
 }
                      
@@ -30,3 +30,4 @@ int historyInfo()
 	printf("Hello!");
 	return 0;	
 }           
+
