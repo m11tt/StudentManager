@@ -18,16 +18,21 @@ int historyInfo(void);
        
 //B
 int addGrade(void);
-            
-int checkGrade(void);          
 
+//成绩查询
+int checkGrade(void); 
+int scoreQuery(void);
+
+//成绩修改
 int changeGrade(void);  
+void getCurrentDate(char* buffer);
+int scoreModify(void);
 
 int gradeExport(void); 
 
 int gradeHistory(void);
 
-//C                 
+//C     
 int gradeAnalysis(void);
 
 int studentAnalysis(void);
@@ -65,4 +70,5 @@ void ChangeClass();
 void StandardSetting(); 
 
 #endif
+
 
