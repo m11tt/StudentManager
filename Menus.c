@@ -14,20 +14,20 @@ void AdminMenu()
 	{ 
 	
 		printf("--------------------------------------------------\n");
-		printf("|<      »¶Ó­Ê¹ÓÃÑ§ÉúÐÅÏ¢³É¼¨¹ÜÀíÏµÍ³(¨R¨Œ¨Q)       >|\n");
+		printf("|<      æ¬¢è¿Žä½¿ç”¨å­¦ç”Ÿä¿¡æ¯æˆç»©ç®¡ç†ç³»ç»Ÿ(â‰§â–½â‰¦)       >|\n");
 		printf("--------------------------------------------------\n");
 		printf("\n"); 	
-		printf("            ¡ý¡ý¡ý <×Ü²Ëµ¥À¸Ä¿> (¨R¨Œ¨Q*)o\n");
+		printf("            â†“â†“â†“ <æ€»èœå•æ ç›®> (â‰§â–½â‰¦*)o\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 A.ÐÅÏ¢¹ÜÀí                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 B.ÏµÍ³ÉèÖÃ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 E.ÍË³öÏµÍ³                     ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 A.ä¿¡æ¯ç®¡ç†                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 B.ç³»ç»Ÿè®¾ç½®                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 E.é€€å‡ºç³»ç»Ÿ                     â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           (£Þ¨Œ£Þ)ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           (ï¼¾â–½ï¼¾)è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");	
 		
 		scanf(" %c",&choice);
@@ -43,10 +43,10 @@ void AdminMenu()
 				break;
 			case'E':
 			case'e':
-				printf("ÔÙ¼û£¡Bye~ o(*£þ¨Œ£þ*)¥Ö\n"); 
+				printf("å†è§ï¼Bye~ o(*ï¿£â–½ï¿£*)ãƒ–\n"); 
 				break;		
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 				return;
 	    	}
 	} while(1);
@@ -61,24 +61,24 @@ void TeacherMenu()
 	do
 	{ 
 		printf("--------------------------------------------------\n");
-		printf("|<      »¶Ó­Ê¹ÓÃÑ§ÉúÐÅÏ¢³É¼¨¹ÜÀíÏµÍ³(¨R¨Œ¨Q)       >|\n");
+		printf("|<      æ¬¢è¿Žä½¿ç”¨å­¦ç”Ÿä¿¡æ¯æˆç»©ç®¡ç†ç³»ç»Ÿ(â‰§â–½â‰¦)       >|\n");
 		printf("--------------------------------------------------\n");
 		printf("\n"); 	
-		printf("            ¡ý¡ý¡ý <×Ü²Ëµ¥À¸Ä¿> (¨R¨Œ¨Q*)o\n");
+		printf("            â†“â†“â†“ <æ€»èœå•æ ç›®> (â‰§â–½â‰¦*)o\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 A.ÐÅÏ¢¹ÜÀí                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 B.³É¼¨¹ÜÀí                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 C.Í³¼Æ·ÖÎö                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 D.ÏµÍ³ÉèÖÃ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 E.ÍË³öÏµÍ³                     ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 A.ä¿¡æ¯ç®¡ç†                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 B.æˆç»©ç®¡ç†                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 C.ç»Ÿè®¡åˆ†æž                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 D.ç³»ç»Ÿè®¾ç½®                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 E.é€€å‡ºç³»ç»Ÿ                     â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           (£Þ¨Œ£Þ)ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           (ï¼¾â–½ï¼¾)è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");	
 		
 		scanf(" %c",&choice);
@@ -102,7 +102,7 @@ void TeacherMenu()
 				break;
 			case'E':
 			case'e':
-				printf("ÔÙ¼û£¡Bye~ o(*£þ¨Œ£þ*)¥Ö\n"); 
+				printf("å†è§ï¼Bye~ o(*ï¿£â–½ï¿£*)ãƒ–\n"); 
 				break;		
 	    	}
     } while(choice != ' ');
@@ -117,22 +117,22 @@ void StudentMenu()
 	do
 	{ 
 		printf("--------------------------------------------------\n");
-		printf("|<      »¶Ó­Ê¹ÓÃÑ§ÉúÐÅÏ¢³É¼¨¹ÜÀíÏµÍ³(¨R¨Œ¨Q)       >|\n");
+		printf("|<      æ¬¢è¿Žä½¿ç”¨å­¦ç”Ÿä¿¡æ¯æˆç»©ç®¡ç†ç³»ç»Ÿ(â‰§â–½â‰¦)       >|\n");
 		printf("--------------------------------------------------\n");
 		printf("\n"); 	
-		printf("            ¡ý¡ý¡ý <×Ü²Ëµ¥À¸Ä¿> (¨R¨Œ¨Q*)o\n");
+		printf("            â†“â†“â†“ <æ€»èœå•æ ç›®> (â‰§â–½â‰¦*)o\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 A.ÐÅÏ¢¹ÜÀí                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 B.³É¼¨¹ÜÀí                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 C.Í³¼Æ·ÖÎö                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 E.ÍË³öÏµÍ³                     ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 A.ä¿¡æ¯ç®¡ç†                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 B.æˆç»©ç®¡ç†                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 C.ç»Ÿè®¡åˆ†æž                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 E.é€€å‡ºç³»ç»Ÿ                     â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           (£Þ¨Œ£Þ)ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           (ï¼¾â–½ï¼¾)è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");	
 		
 		scanf(" %c",&choice);
@@ -152,7 +152,7 @@ void StudentMenu()
 				break;
 			case'E':
 			case'e':
-				printf("ÔÙ¼û£¡Bye~ o(*£þ¨Œ£þ*)¥Ö\n"); 
+				printf("å†è§ï¼Bye~ o(*ï¿£â–½ï¿£*)ãƒ–\n"); 
 				break;		
 	    	}
     } while(choice != ' ');
@@ -160,30 +160,30 @@ void StudentMenu()
 }
 
 	
-void InfoManage()      //A.Ñ§ÉúÐÅÏ¢¹ÜÀí
+void InfoManage()      //A.å­¦ç”Ÿä¿¡æ¯ç®¡ç†
 {
 	system("cls");
 	
 	int choice;
 	do
 	{
-		printf("            ¡ý¡ý¡ý<A.ÐÅÏ¢¹ÜÀí> (¨R¨Œ¨Q*)o\n");
+		printf("            â†“â†“â†“<A.ä¿¡æ¯ç®¡ç†> (â‰§â–½â‰¦*)o\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.ÐÅÏ¢Â¼Èë                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.ÐÅÏ¢²éÑ¯                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 3.ÐÅÏ¢ÐÞ¸Ä             ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 4.ÐÅÏ¢É¾³ý                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 5.ÀúÊ·¼ÇÂ¼                     ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 0.·µ»ØÖ÷²Ëµ¥                   ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.ä¿¡æ¯å½•å…¥                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.ä¿¡æ¯æŸ¥è¯¢                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 3.ä¿¡æ¯ä¿®æ”¹             â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 4.ä¿¡æ¯åˆ é™¤                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 5.åŽ†å²è®°å½•                     â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 0.è¿”å›žä¸»èœå•                   â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           (£Þ¨Œ£Þ)ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           (ï¼¾â–½ï¼¾)è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 	
 		scanf(" %d",&choice);
@@ -208,37 +208,37 @@ void InfoManage()      //A.Ñ§ÉúÐÅÏ¢¹ÜÀí
 			case 0:
 				return; 
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 		}
 	
  	   } while(1);	
 	return;	
 }
 
-void ScoreManage()      //B.Ñ§Éú³É¼¨¹ÜÀí 
+void ScoreManage()      //B.å­¦ç”Ÿæˆç»©ç®¡ç† 
 {
 	system("cls");
 	
 	int choice;
 	do
 	{
-		printf("            ¡ý¡ý¡ý<B.³É¼¨¹ÜÀí>q(¨R¨Œ¨Qq)\n");
+		printf("            â†“â†“â†“<B.æˆç»©ç®¡ç†>q(â‰§â–½â‰¦q)\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.³É¼¨Â¼Èë                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.³É¼¨²éÑ¯                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 3.³É¼¨ÐÞ¸Ä             ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 4.³É¼¨µ¼³ö                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 5.ÀúÊ·³É¼¨                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 0.·µ»ØÖ÷²Ëµ¥                   ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.æˆç»©å½•å…¥                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.æˆç»©æŸ¥è¯¢                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 3.æˆç»©ä¿®æ”¹             â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 4.æˆç»©å¯¼å‡º                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 5.åŽ†å²æˆç»©                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 0.è¿”å›žä¸»èœå•                   â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 	
 		scanf(" %d",&choice);
@@ -249,10 +249,10 @@ void ScoreManage()      //B.Ñ§Éú³É¼¨¹ÜÀí
 				addGrade();
 				break;
 			case 2:
-				checkGrade();
+				scoreQuery();
 				break;
 			case 3:
-				changeGrade();
+				scoreModify();
 				break;
 			case 4:
 				gradeExport();
@@ -263,34 +263,34 @@ void ScoreManage()      //B.Ñ§Éú³É¼¨¹ÜÀí
 			case 0:
 				return;
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 		}
     }while(1);	
 	return;	
 }
 
-void StatisticAnalysis()      //C.Í³¼Æ·ÖÎö
+void StatisticAnalysis()      //C.ç»Ÿè®¡åˆ†æž
 {
 	system("cls");
 	
 	int choice;
 	do
 	{
-		printf("            ¡ý¡ý¡ý<C.Í³¼Æ·ÖÎö>©d(¨R ¨Œ ¨Q)©f\n");
+		printf("            â†“â†“â†“<C.ç»Ÿè®¡åˆ†æž>ãƒ¾(â‰§ â–½ â‰¦)ã‚\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.³É¼¨·ÖÎö                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.Ñ§Éú·ÖÎö                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 3.°à¼¶·ÖÎö             ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 4.Ñ§ÆÚ»ã×Ü                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 0.·µ»ØÖ÷²Ëµ¥                   ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.æˆç»©åˆ†æž                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.å­¦ç”Ÿåˆ†æž                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 3.ç­çº§åˆ†æž             â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 4.å­¦æœŸæ±‡æ€»                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 0.è¿”å›žä¸»èœå•                   â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 		
 		scanf(" %d",&choice);
@@ -312,33 +312,33 @@ void StatisticAnalysis()      //C.Í³¼Æ·ÖÎö
 			case 0:
 				return; 
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 		}
 	    }while(1);		
 }
 
-void SystemSetting()      //D.ÏµÍ³ÉèÖÃ
+void SystemSetting()      //D.ç³»ç»Ÿè®¾ç½®
 {
 	system("cls");
 	
 	int choice;
 	do
 	{
-		printf("            ¡ý¡ý¡ý<D.ÏµÍ³ÉèÖÃ>©d(¨R ¨Œ ¨Q)©f\n");
+		printf("            â†“â†“â†“<D.ç³»ç»Ÿè®¾ç½®>ãƒ¾(â‰§ â–½ â‰¦)ã‚\n");
 		printf("\n"); 
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 1.Ñ§¿ÆÉèÖÃ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 2.Äê¼¶Ä¿Â¼                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 3.°à¼¶ÉèÖÃ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 4.³É¼¨±ê×¼ÉèÖÃ                     ¡ó\n");
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
-		printf("¡ó                 0.·µ»ØÖ÷²Ëµ¥                   ¡ó\n");	
-		printf("¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó¡ó\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 1.å­¦ç§‘è®¾ç½®                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 2.å¹´çº§ç›®å½•                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 3.ç­çº§è®¾ç½®                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 4.æˆç»©æ ‡å‡†è®¾ç½®                     â—‡\n");
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
+		printf("â—‡                 0.è¿”å›žä¸»èœå•                   â—‡\n");	
+		printf("â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡â—‡\n");
 		printf("\n");	
-		printf("¡ó           £¨*£Þ-£Þ*£©ÇëÑ¡Ôñ¶ÔÓ¦¹¦ÄÜ£º             ¡ó\n");
+		printf("â—‡           ï¼ˆ*ï¼¾-ï¼¾*ï¼‰è¯·é€‰æ‹©å¯¹åº”åŠŸèƒ½ï¼š             â—‡\n");
 		printf("\n");
 		
 		scanf(" %d",&choice);
@@ -360,7 +360,8 @@ void SystemSetting()      //D.ÏµÍ³ÉèÖÃ
 			case 0:
 				return; 
 			default:
-				printf("±§Ç¸ÎÞ¸Ã¹¦ÄÜo(T¥ØTo)ÇëÖØÐÂÑ¡Ôñ£¡£¡£¡\n"); 
+				printf("æŠ±æ­‰æ— è¯¥åŠŸèƒ½o(Tãƒ˜To)è¯·é‡æ–°é€‰æ‹©ï¼ï¼ï¼\n"); 
 		}
 	    }while(1);		
 }
+
